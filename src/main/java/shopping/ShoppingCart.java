@@ -1,5 +1,6 @@
 package shopping;
 
+import products.Clothes;
 import products.Products;
 
 import java.util.ArrayList;
@@ -11,13 +12,15 @@ import java.util.List;
 public class ShoppingCart {
     List<Products> listofProducts = new ArrayList();
     double price = 0;
+    Class cloth = Clothes.class;
+    boolean isCloth = cloth.isInstance(cloth);
 
 
     public void addItem(Products products) {
         if (listofProducts.size() < 10) {
             listofProducts.add(products);
             System.out.println(listofProducts.size() + " item(s) added.");
-            if (products.getIfItIsCloth()) {
+            if (isCloth) {
                 price += products.getPrice() * 1.1;
 
             } else {

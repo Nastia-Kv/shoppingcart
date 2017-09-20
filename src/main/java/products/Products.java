@@ -7,12 +7,10 @@ public class Products {
 
     private String productName;
     private double price;
-    private Boolean isCloth;
 
-    public Products(String productName, double price, Boolean isCloth) {
+    public Products(String productName, double price) {
         this.productName = productName;
         this.price = price;
-        this.isCloth = isCloth;
     }
 
     public String getProductName() {
@@ -21,10 +19,6 @@ public class Products {
 
     public double getPrice() {
         return price;
-    }
-
-    public Boolean getIfItIsCloth() {
-        return isCloth;
     }
 
 }

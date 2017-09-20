@@ -7,8 +7,8 @@ public class Food extends Products {
 
     String bestBefore;
 
-    public Food(String productName, double price, Boolean isCloth, String bestBefore) {
-        super(productName, price, isCloth);
+    public Food(String productName, double price, String bestBefore) {
+        super(productName, price);
         this.bestBefore = bestBefore;
     }
 
