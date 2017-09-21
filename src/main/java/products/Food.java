@@ -3,12 +3,12 @@ package products;
 /**
  * Created by nastia on 9/17/17.
  */
-public class Food extends Products {
+public class Food extends Product {
 
-    String bestBefore;
+    private String bestBefore;
 
-    public Food(String productName, double price, String bestBefore) {
-        super(productName, price);
+    public Food(String productName, double price, ProductType type, String bestBefore) {
+        super(productName, price, type);
         this.bestBefore = bestBefore;
     }
 
